@@ -11,18 +11,17 @@ import numpy as np
 import random
 import tensorflow as tf
 import pandas as pd
-random.seed(123)
 np.random.seed(123)
 tf.random.set_random_seed(123)
 
 # Read datafile 
-file=pd.read_csv('content/data/covid.csv')
+file=pd.read_csv('data/covid.csv')
 file_tasks =['activity']
 
 
 
 featurizer = dc.feat.ConvMolFeaturizer()
-dataset_file = 'covid.csv'
+dataset_file = 'data/covid.csv'
 loader = dc.data.CSVLoader(
         tasks= file_tasks, smiles_field="smiles", featurizer=featurizer) 
 dataset = loader.featurize(dataset_file,shard_size=8192)
@@ -48,7 +47,7 @@ validation_scores = []
 train_scores = []
 learning_rate = dc.models.optimizers.ExponentialDecay(0.0002, 0.9, 1000)
 for train_set, val_set in split_datas:
-    model = dc.models.GraphConvModel(len(cardio_tasks),batch_size =64,droupout=0,dense_layer_size=256,learning_rate=learning_rate,model_dir='model5')
+    model = dc.models.GraphConvModel(len(file_tasks),batch_size =64,droupout=0,dense_layer_size=256,learning_rate=learning_rate,model_dir='model5')
     callback = dc.models.ValidationCallback(val_set, 1000, metric)
     model.fit(train_set, nb_epoch = 20,callbacks=callback)
     train_score = model.evaluate(train_set, [metric], transformers)
