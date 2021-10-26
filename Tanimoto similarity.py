@@ -61,7 +61,7 @@ newdatafile2 = newdatafile.drop(['ID'],axis = 1)
 
 newdatafile2
 
-ax = sns.heatmap(newdatafile2, xticklabels=x_axis_labels, yticklabels=y_axis_labels)
+ax = sns.heatmap(newdatafile2, xticklabels=False, yticklabels=False)
 plt.xlabel('Compounds')
 plt.ylabel('Compounds')
 plt.savefig('ax.png')
