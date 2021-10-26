@@ -1,5 +1,6 @@
 # Inhibitors
 ### Finding SARS-COV-2 inhibitors using deep learning
 
-### Data
-_______________________________________________________________________________________
+##### Data 
+Data to train the model exist as smile strings, with label either as 0 (non active)or 1 (active compounds). 
+
