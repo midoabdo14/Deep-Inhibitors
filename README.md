@@ -6,7 +6,7 @@ Using graph convolutional network for molcular properties prediction of anti-SAR
 - Saved as csv file in the data directory
 
 # Train Model
-- Clone file to your working directory
+- Clone model to your working directory
 ```
 cd Inhbitors
 !python model training.py
