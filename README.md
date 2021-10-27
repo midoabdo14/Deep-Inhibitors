@@ -1,11 +1,19 @@
 # SARS-CoV-2 Inhibitors
-Finding SARS-COV-2 inhibitors using deep learning
+Using graph convolutional network for molcular properties prediction of anti-SARS-COV-2 inhibitors.
 
 # Data 
-Data to train the model exist as smile strings format, with label as 0 (non active) or 1 (active compounds). 
+- Data to train the model exist as SMILE strings format, labelled as 0 (non active) or 1 (active compounds) 
+- Saved as csv file in the data directory
 
 # Train Model
 ```
 cd Inhbitors
 !python model training.py
+```
+
+# Model prediction
+- To make prediction in new dataset, replace file directory in prediction.py with your data directory 
+- To run example file copy
+``` 
+!python prediction
 ```
