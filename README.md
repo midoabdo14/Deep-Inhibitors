@@ -1,4 +1,4 @@
-# SARS-CoV-2 Inhibitors
+# Deep learning based screening for anti-SARS-CoV-2 inhibitors
 Using graph convolutional network for molcular properties prediction of anti-SARS-COV-2 inhibitors.
 
 # Data 
