@@ -14,7 +14,7 @@ cd Inhbitors
 
 # Model prediction
 - To make prediction in new dataset, replace file directory in prediction.py with your data directory 
-- To run example file copy
+- To run example file 
 ``` 
 !python prediction
 ```
