@@ -5,7 +5,7 @@
 !pip install rdkit-pypi
 
 import pandas as pd
-data = pd.read_csv("train.csv")
+data = pd.read_csv("active compound.csv")
 
 
 
