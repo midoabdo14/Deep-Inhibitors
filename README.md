@@ -2,7 +2,7 @@
 Using graph convolutional network for molcular properties prediction of anti-SARS-COV-2 inhibitors.
 
 # Data 
-- Data to train the model exist as SMILE strings format, labelled as 0 (non active) or 1 (active compounds) 
+- Data to train the model exist as SMILE strings format, labeled as 0 (non active) or 1 (active compounds) 
 - Saved as csv file in the data directory
 
 # Train Model
