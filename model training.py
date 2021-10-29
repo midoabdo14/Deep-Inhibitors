@@ -16,7 +16,7 @@ np.random.seed(123)
 tf.random.set_random_seed(123)
 
 # Explore datafile 
-file=pd.read_csv('data/covid.csv')
+file=pd.read_csv('data/covid.csv')  # you can replace this path with your own data file path
 file.head()
 
 # Prepare data
