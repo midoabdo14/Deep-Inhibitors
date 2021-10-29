@@ -16,13 +16,13 @@ tf.random.set_random_seed(123)
 import pandas as pd
 
 # Explore data
-dr=pd.read_csv('/data/test.csv')
+dr=pd.read_csv('/data/test.csv')  # you can replace this path with your own data file path
 dr.head()
 
 # Prepare data
 dr_tasks =['predict']
 featurizer = dc.feat.ConvMolFeaturizer()
-dataset_file = '/data/test.csv'
+dataset_file = '/data/test.csv'  # you can replace this path with your own data file path
 loader = dc.data.CSVLoader(
          tasks= dr_tasks,smiles_field="smiles", featurizer=featurizer) 
 rdtest = loader.featurize(dataset_file,shard_size=8192)
