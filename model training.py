@@ -22,7 +22,7 @@ file.head()
 # Prepare data
 file_tasks =['activity']
 featurizer = dc.feat.ConvMolFeaturizer()
-dataset_file = 'data/covid.csv'
+dataset_file = 'data/covid.csv'  # you can replace this with your own data
 loader = dc.data.CSVLoader(
         tasks= file_tasks, smiles_field="smiles", featurizer=featurizer) 
 dataset = loader.featurize(dataset_file,shard_size=8192)
