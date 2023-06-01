@@ -20,11 +20,9 @@ loader = dc.data.CSVLoader(
 rdtest = loader.featurize(dataset_file,shard_size=8192)
 
 
-
 # Load trained model 
 model= GraphConvModel(model_dir='/content/model',n_tasks=1)
 model.restore()
-
 
 
 # Make prediction and save csv file  
