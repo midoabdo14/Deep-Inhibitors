@@ -18,5 +18,5 @@ cd Inhbitors
 - To make prediction in new dataset using our model, replace data file path in prediction.py file with your own data path 
 - To test model on the example file, run
 ``` 
-!python prediction
+!python model_prediction
 ```
