@@ -9,7 +9,7 @@ Using graph convolutional network for molcular properties prediction of anti-SAR
 - To train model using our data, clone model to your working directory and run 
 ```
 cd Inhbitors
-!python model training.py
+!python model_training.py
 ```
 
 - To train model using your own data, replace data file path in model training.py file with your own data path
@@ -18,5 +18,5 @@ cd Inhbitors
 - To make prediction in new dataset using our model, replace data file path in prediction.py file with your own data path 
 - To test model on the example file, run
 ``` 
-!python model_prediction
+!python model_prediction.py
 ```
