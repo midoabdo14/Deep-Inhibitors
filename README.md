@@ -1,5 +1,6 @@
 # Deep learning based screening for anti-SARS-CoV-2 inhibitors
 Using graph convolutional network for molcular properties prediction of anti-SARS-COV-2 inhibitors.
+![image](https://github.com/midoabdo14/Deep-Inhibitors/assets/91239112/6f41cc6e-95b8-4cec-b421-9c2edbfdb844)
 
 # Data 
 - Data to train the model exist as SMILE strings format, labeled as 0 (non active) or 1 (active compounds) 
